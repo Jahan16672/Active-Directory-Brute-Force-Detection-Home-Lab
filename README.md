@@ -1,4 +1,4 @@
-![image](https://github.com/user-attachments/assets/b3cdf227-0530-40d0-8829-fbc08cc04f2c)![image](https://github.com/user-attachments/assets/3ced47d1-4229-424f-91bf-f3ffef473bf2)# Active Directory Brute Force Detection Home Lab
+# Active Directory Brute Force Detection Home Lab
 
 ## Overview
 
