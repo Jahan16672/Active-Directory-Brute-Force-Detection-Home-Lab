@@ -88,7 +88,7 @@ Access [VirtualBox Downloads](https://www.virtualbox.org/), obtain the appropria
 6. Select "Install now", choose "Windows Server 2022 Standard Evaluation (Desktop Experience)"
 7. Configure custom settings, establish administrator password, and complete installation
    
- ![image](https://github.com/user-attachments/assets/6a7a60be-4987-4118-8cd4-7c5dfcfa03a2)
+ ![image](https://github.com/user-attachments/assets/4f2fdcd1-075e-4d67-8b32-89a82616699e)
 
  *Ref 2. Windows server*
 
