@@ -8,7 +8,7 @@ This project establishes a comprehensive virtual testing environment using Oracl
 
 ## Lab Architecture Overview
 
-![Active Directory Lab Architecture Diagram](./assets/lab-architecture-diagram.png)
+![Active Directory Lab Architecture Diagram](Active Directory Lab Diagram.png)
 *Ref 1. Active Directory Lab Architecture Diagram*
 
 ## Purpose and Goals
