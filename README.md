@@ -1,4 +1,4 @@
-# Active Directory Brute Force Detection Home Lab
+![image](https://github.com/user-attachments/assets/b3cdf227-0530-40d0-8829-fbc08cc04f2c)![image](https://github.com/user-attachments/assets/3ced47d1-4229-424f-91bf-f3ffef473bf2)# Active Directory Brute Force Detection Home Lab
 
 ## Overview
 
@@ -300,6 +300,10 @@ Follow the same network configuration and Splunk setup steps as the Windows Targ
 5. Establish a password and complete user creation
 6. Create an additional OU named "HR" and establish another user with different credentials
 
+![image](https://github.com/user-attachments/assets/77070c93-f287-4ff1-ae39-f8e47439839d)
+
+*Ref 3. logging as a Terry Smith*
+
 #### 2. Windows 10 Domain Integration
 
 1. From the target machine, access Windows search and enter "Advanced System Properties" > Computer Name > Change
@@ -393,16 +397,25 @@ Follow the same network configuration and Splunk setup steps as the Windows Targ
    Install-AtomicRedTeam -getAtomics
    ```
    Respond with Y
-6. Navigate to the (C:) drive > AtomicRedTeam > Atomics
-7. Reference [MITRE ATT&CK](https://attack.mitre.org/) to view adversary tactics and techniques
-8. Execute:
+   
+   ![image](https://github.com/user-attachments/assets/94400483-049d-43c3-a908-563162700593)
+
+*Ref 4. Installing AtomicRedTeam*
+
+7. Navigate to the (C:) drive > AtomicRedTeam > Atomics
+8. Reference [MITRE ATT&CK](https://attack.mitre.org/) to view adversary tactics and techniques
+9. Execute:
    ```powershell
    Invoke-AtomicTest T1136.001
    ```
    T1136 represents a persistence technique for local account creation
-9. After executing this test and checking Splunk, observe that no events appeared for the NewLocalUser creation
-10. This discovery reveals a significant gap in our monitoring capabilities
-11. Continue testing with additional techniques as desired
+10. After executing this test and checking Splunk, observe that no events appeared for the NewLocalUser creation
+11. This discovery reveals a significant gap in our monitoring capabilities
+12. Continue testing with additional techniques as desired
+    
+![image](https://github.com/user-attachments/assets/80ebf39e-a7e9-4bc5-a821-dbb7c62b0f55)
+
+*Ref 5. atomics*
 
 ## Project Conclusion
 
