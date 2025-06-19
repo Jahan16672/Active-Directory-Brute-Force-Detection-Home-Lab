@@ -314,7 +314,7 @@ Follow the same network configuration and Splunk setup steps as the Windows Targ
 6. In Command Prompt, execute `ipconfig /all` to verify DNS Servers is configured as `192.168.10.7`
 7. Return to Computer Name/Domain Changes and select "OK"
 8. Authenticate with administrator credentials and restart the machine
-9. When accessing the login screen, select "Other User" and verify the domain authentication is pointing to "DEMODOMAIN"
+9. When accessing the login screen, select "Other User" and verify the domain authentication is pointing to "MYSAM"
 10. Authenticate using the credentials of a user created earlier within the IT or HR organizational units
 
 ### Phase 4 - Kali Linux Attack Simulation Against Target Machine
