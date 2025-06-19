@@ -87,7 +87,8 @@ Access [VirtualBox Downloads](https://www.virtualbox.org/), obtain the appropria
 5. Finalize configuration and start the VM
 6. Select "Install now", choose "Windows Server 2022 Standard Evaluation (Desktop Experience)"
 7. Configure custom settings, establish administrator password, and complete installation
-8. ![image](https://github.com/user-attachments/assets/6a7a60be-4987-4118-8cd4-7c5dfcfa03a2)
+   
+ ![image](https://github.com/user-attachments/assets/6a7a60be-4987-4118-8cd4-7c5dfcfa03a2)
 
  *Ref 2. Windows server*
 
@@ -281,14 +282,14 @@ Follow the same network configuration and Splunk setup steps as the Windows Targ
 5. Upon receiving the message "Configuration required. Installation succeeded on ADDC01", proceed to the next steps
 6. Locate the notification flag icon at the top of the window and select "Promote this server to a domain controller"
 7. Select "Add a new forest" since we're establishing a completely new domain
-8. Assign the name "demodomain.local"
+8. Assign the name "mysam.local"
 9. On the subsequent page, maintain all default settings and create an administrator password
 10. Continue through the wizard until the Configuration Wizard validates prerequisites, then select Install
 11. This process will sign you out and restart the server
 
 **User Creation:**
 
-1. When the machine restarts, you should see "DEMODOMAIN\Administrator" as the authenticated user
+1. When the machine restarts, you should see "MYSAM\Administrator" as the authenticated user
 2. In Server Manager, navigate to Tools > Active Directory Users and Computers
 3. Right-click demodomain.local > New > Organizational Unit > Name: "IT"
 4. Right-click within this new OU > New > User
@@ -302,7 +303,7 @@ Follow the same network configuration and Splunk setup steps as the Windows Targ
 #### 2. Windows 10 Domain Integration
 
 1. From the target machine, access Windows search and enter "Advanced System Properties" > Computer Name > Change
-2. Select "Domain:" and enter "DEMODOMAIN.LOCAL"
+2. Select "Domain:" and enter "MYSAM.LOCAL"
 3. Access the network icon in the system tray, right-click > Open Network & Internet Settings > Change Adapter Options
 4. Right-click adapter > Properties > Double-click "Internet Protocol Version 4 (TCP/IPv4)"
 5. Modify the Preferred DNS server to `192.168.10.7`
@@ -418,24 +419,6 @@ You should be capable of:
 - Validating security controls with Atomic Red Team
 - Managing Active Directory environments
 - Analyzing security logs and identifying attack patterns
-
-## Network Diagram
-
-```
-┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐    ┌─────────────────┐
-│   Windows 10    │    │   Kali Linux    │    │ Windows Server  │    │ Ubuntu Server   │
-│   Target-PC     │    │   Attacker      │    │    ADDC01       │    │ Splunk Server   │
-│ 192.168.10.100  │    │ 192.168.10.250  │    │ 192.168.10.7    │    │ 192.168.10.10   │
-└─────────────────┘    └─────────────────┘    └─────────────────┘    └─────────────────┘
-         │                       │                       │                       │
-         └───────────────────────┼───────────────────────┼───────────────────────┘
-                                 │                       │
-                    ┌─────────────────────────────────────┐
-                    │        NAT Network                  │
-                    │      192.168.10.0/24               │
-                    │    Gateway: 192.168.10.1           │
-                    └─────────────────────────────────────┘
-```
 
 ## Key Learning Outcomes
 
