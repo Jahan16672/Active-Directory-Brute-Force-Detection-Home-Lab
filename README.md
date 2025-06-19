@@ -64,7 +64,7 @@ Access [VirtualBox Downloads](https://www.virtualbox.org/), obtain the appropria
 5. Select "ISO file" option and save to desired location
 6. Within Oracle VM VirtualBox Manager, select "Add" to initialize new VM creation
 7. Assign appropriate name, select the downloaded Windows 10 ISO image
-8. Allocate 4096MB RAM, assign 1 CPU core, create 50GB virtual hard disk
+8. Allocate 4096MB RAM, assign 2 CPU core, create 50GB virtual hard disk
 9. Complete setup and launch the VM
 10. Proceed through installation wizard, select "Custom: Install Windows only (advanced)" option
 11. Allow Windows 10 installation to complete
@@ -83,17 +83,21 @@ Access [VirtualBox Downloads](https://www.virtualbox.org/), obtain the appropria
 1. Download Windows Server 2022 ISO from [Microsoft Evaluation Center](https://www.microsoft.com/en-us/evalcenter/evaluate-windows-server-2022)
 2. Complete the required form and download the "64-bit edition"
 3. Create new VM within Oracle VM VirtualBox Manager using the ISO
-4. Allocate 4096MB RAM, assign 1 CPU core, create 50GB virtual hard disk
+4. Allocate 8192MB RAM, assign 4 CPU core, create 50GB virtual hard disk
 5. Finalize configuration and start the VM
 6. Select "Install now", choose "Windows Server 2022 Standard Evaluation (Desktop Experience)"
 7. Configure custom settings, establish administrator password, and complete installation
+8. ![image](https://github.com/user-attachments/assets/6a7a60be-4987-4118-8cd4-7c5dfcfa03a2)
+
+ *Ref 2. Windows server*
+
 
 #### 5. Ubuntu Server Deployment
 
 1. Navigate to [Ubuntu Server](https://ubuntu.com/server)
 2. Access Products > Ubuntu Server and download Ubuntu Server (this laboratory utilizes version 22.04.4 LTS)
 3. Create new VM in Oracle VM VirtualBox Manager with the ISO image
-4. Allocate 8192MB RAM, assign 2 CPU cores, create 100GB virtual hard disk
+4. Allocate 8192MB RAM, assign 4 CPU cores, create 100GB virtual hard disk
 5. Complete setup and start the VM
 6. Select "Try or Install Ubuntu Server"
 7. Proceed through configuration screens selecting "Done" and "Continue" as appropriate
