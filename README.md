@@ -4,7 +4,7 @@
 
 This project establishes a comprehensive virtual testing environment using Oracle VM VirtualBox, featuring Windows 10, Kali Linux, Windows Server, and Ubuntu Server virtual machines. The setup includes network configuration for VM intercommunication through IP addressing and NAT networking. The security framework incorporates Splunk Server for log monitoring and analysis, Universal Forwarder for data transmission, and Sysmon for comprehensive endpoint surveillance. Attack simulation utilizes Crowbar for credential-based attacks, Atomic Red Team (ART) for security validation testing, and Splunk for detailed log examination. Windows systems are integrated into an Active Directory infrastructure with Remote Desktop functionality enabled. PowerShell automation streamlines various administrative tasks, providing practical experience with cybersecurity tools and methodologies in a secure, isolated environment.
 
-**Estimated Duration:** 3-4 hours
+**Estimated Duration:** 5-6 hours
 
 ## Lab Architecture Overview
 
