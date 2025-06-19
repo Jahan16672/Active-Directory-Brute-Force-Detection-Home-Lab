@@ -32,7 +32,7 @@ This laboratory exercise provides comprehensive hands-on experience in establish
 
 These competencies encompass virtualization technologies, network engineering, software deployment and configuration, cybersecurity tools and methodologies, operating system administration, documentation practices, scripting and automation, troubleshooting techniques, Active Directory administration, and endpoint security monitoring.
 
-## Technology Stack
+## Tools Used
 
 - **Oracle VM VirtualBox Manager:** Primary hypervisor for virtual machine creation and administration
 - **Splunk Server:** Centralized logging platform for security event analysis and monitoring
